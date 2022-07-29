@@ -1,12 +1,13 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
-import parameters, csv, os.path, time
+from webdriver_manager.chrome import ChromeDriverManager
+import csv
+import os.path
+import parameters
+import time
 
 
-
-
-# Functions 
+# Functions
 def search_and_send_request(keywords, till_page, writer):
     for page in range(1, till_page + 1):
         print('\nINFO: Checking on page %s' % (page))
